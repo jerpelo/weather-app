@@ -1,0 +1,72 @@
+.weatherApp {
+  border: 5px solid #64676a;
+  padding: 15px;
+  margin: 30px auto;
+  max-width: 1100px;
+}
+.local {
+  font-size: 24px;
+  font-weight: bold;
+  opacity: 0.7;
+}
+form {
+  opacity: 0.6;
+  padding-top: 20px;
+  font-size: 20px;
+}
+#my-location {
+  opacity: 0.6;
+  font-size: 15px;
+}
+.weather {
+  text-align: center;
+}
+.currentEmoji {
+  font-size: 84px;
+  line-height: 75px;
+  padding-top: 15px;
+}
+.currentWeather {
+  font-size: 16px;
+  font-weight: bold;
+  opacity: 0.7;
+}
+.currentTemp {
+  font-size: 130px;
+  opacity: 0.7;
+  line-height: 0.75;
+  text-align: right;
+  padding-top: 4px;
+}
+.col-2 {
+  padding: 0;
+  padding-top: 0;
+}
+.units {
+  font-size: 24px;
+  opacity: 0.7;
+}
+.celsius {
+  font-weight: bold;
+}
+.conditions {
+  opacity: 0.5;
+}
+.future {
+  text-align: center;
+  padding-top: 10px;
+}
+.emojis {
+  font-size: 84px;
+  line-height: 75px;
+  padding-top: 15px;
+}
+.day {
+  opacity: 0.6;
+}
+.temp {
+  opacity: 0.6;
+}
+.high {
+  font-weight: bold;
+}
