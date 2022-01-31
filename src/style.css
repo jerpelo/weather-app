@@ -70,3 +70,6 @@ form {
 .high {
   font-weight: bold;
 }
+.source-line {
+  text-align: center;
+}
