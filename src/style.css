@@ -6,71 +6,56 @@
   max-width: 1100px;
 }
 .local {
-  font-size: 24px;
+  font-size: 20px;
+  opacity: 0.6;
+}
+#city {
+  font-size: 48px;
   font-weight: bold;
-  opacity: 0.7;
 }
 form {
   opacity: 0.6;
-  padding-top: 20px;
   font-size: 20px;
+  text-align: center;
+  padding: 30px;
 }
 #my-location {
-  opacity: 0.6;
+  opacity: 0.8;
   font-size: 17px;
 }
 .weather {
   text-align: center;
 }
 #current-icon {
-  font-size: 84px;
-  line-height: 75px;
-  padding-top: 5px;
+  opacity: 0.6;
 }
 #current-weather {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
-  opacity: 0.7;
+  opacity: 0.6;
+  text-align: center;
 }
 #current-temp {
   font-size: 130px;
-  opacity: 0.7;
+  opacity: 0.6;
   line-height: 0.75;
   text-align: right;
-  padding-top: 4px;
+  padding-top: 9px;
 }
 .col-2 {
   padding: 0;
-  padding-top: 0;
 }
 .units {
-  font-size: 24px;
+  font-size: 42px;
   opacity: 0.6;
 }
-.units .active {
-  color: #64676a;
-  cursor: default;
-  text-decoration: none;
-}
-.units .active:hover {
-  text-decoration: none;
-}
 .conditions {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 .future {
   text-align: center;
-  padding-top: 10px;
 }
-#icon {
-  font-size: 84px;
-  line-height: 75px;
-  padding-top: 15px;
-}
-.day {
-  opacity: 0.6;
-}
-.temp {
+.col {
   opacity: 0.6;
 }
 .high {
@@ -79,4 +64,5 @@ form {
 .source-line {
   text-align: center;
   padding: 10px;
+  opacity: 0.7;
 }

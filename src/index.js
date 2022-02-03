@@ -51,18 +51,18 @@ function showForecast(response) {
   let forecast = document.querySelector("#future");
   let forecastHTML = `<div class="row">`;
   dailyForecast.forEach(function (forecastDay, index) {
-    if (index < 6) {
+    if (index < 5) {
       forecastHTML =
         forecastHTML +
         `
     <div class="col">
       <div>
-        <img src="https://openweathermap.org/img/wn/${
+        <img src="images/${
           forecastDay.weather[0].icon
-        }@2x.png" alt="Cloudy Day" id="icon" />
+        }.png" alt="Cloudy Day" id="icon" />
       </div>
       <div class="day">${formatDay(forecastDay.dt)}</div>
-      <div class="temp">
+      <div class="temp" id="temp">
         <span class="high">${Math.round(forecastDay.temp.max)}°</span>
         <span class="low">| ${Math.round(forecastDay.temp.min)}°</span>
       </div>
@@ -94,10 +94,9 @@ function showTemp(response) {
   let currentIcon = document.querySelector("#current-icon");
   currentIcon.setAttribute(
     "src",
-    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    `images/${response.data.weather[0].icon}.png`
   );
   currentIcon.setAttribute("alt", response.data.weather[0].main);
-  celsiusTemp = response.data.main.temp;
 
   getForecast(response.data.coord);
 }
@@ -133,26 +132,3 @@ let form = document.querySelector("#search-form");
 form.addEventListener("submit", typeCity);
 
 searchCity("Toronto");
-
-function showFahrenheit(event) {
-  event.preventDefault();
-  celsiusLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
-  let currentTemp = document.querySelector("#current-temp");
-  let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
-  currentTemp.innerHTML = Math.round(fahrenheitTemp);
-}
-let fahrenheitLink = document.querySelector("#fahrenheit-temp");
-fahrenheitLink.addEventListener("click", showFahrenheit);
-
-let celsiusTemp = null;
-
-function showCelsius(event) {
-  event.preventDefault();
-  celsiusLink.classList.add("active");
-  fahrenheitLink.classList.remove("active");
-  let currentTemp = document.querySelector("#current-temp");
-  currentTemp.innerHTML = Math.round(celsiusTemp);
-}
-let celsiusLink = document.querySelector("#celsius-temp");
-celsiusLink.addEventListener("click", showCelsius);
