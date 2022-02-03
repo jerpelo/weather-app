@@ -1,7 +1,8 @@
-.weatherApp {
+.weather-app {
   border: 5px solid #64676a;
   padding: 15px;
   margin: 30px auto;
+  margin-bottom: 0;
   max-width: 1100px;
 }
 .local {
@@ -21,17 +22,17 @@ form {
 .weather {
   text-align: center;
 }
-.currentEmoji {
+#current-icon {
   font-size: 84px;
   line-height: 75px;
-  padding-top: 15px;
+  padding-top: 5px;
 }
-.currentWeather {
+#current-weather {
   font-size: 16px;
   font-weight: bold;
   opacity: 0.7;
 }
-.currentTemp {
+#current-temp {
   font-size: 130px;
   opacity: 0.7;
   line-height: 0.75;
@@ -44,10 +45,15 @@ form {
 }
 .units {
   font-size: 24px;
-  opacity: 0.7;
+  opacity: 0.6;
 }
-.celsius {
-  font-weight: bold;
+.units .active {
+  color: #64676a;
+  cursor: default;
+  text-decoration: none;
+}
+.units .active:hover {
+  text-decoration: none;
 }
 .conditions {
   opacity: 0.5;
@@ -72,4 +78,5 @@ form {
 }
 .source-line {
   text-align: center;
+  padding: 10px;
 }

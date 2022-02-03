@@ -16,13 +16,13 @@
   </head>
   <body>
     <div class="container">
-      <div class="weatherApp">
+      <div class="weather-app">
         <div class="row">
           <div class="col-5">
             <div class="local">
-              <div class="city"></div>
-              <div class="date"></div>
-              <div class="local-time"></div>
+              <div id="city"></div>
+              <div id="date"></div>
+              <div id="local-time"></div>
             </div>
             <form id="search-form">
               <input
@@ -44,28 +44,32 @@
           </div>
           <div class="col-2">
             <div class="weather">
-              <div class="currentEmoji">🌨</div>
-              <div class="currentWeather"></div>
+              <img
+                src="images/snow-showers.png"
+                alt="Snow Showers"
+                id="current-icon"
+              />
+              <div id="current-weather"></div>
             </div>
           </div>
           <div class="col-3">
-            <div class="currentTemp"></div>
+            <div id="current-temp"></div>
           </div>
           <div class="col-2">
             <div class="moreInfo">
               <div class="units">
                 <span class="celsius"
-                  ><a href="#" id="celsius-temp">°C</a></span
+                  ><a href="#" id="celsius-temp" class="active">°C</a></span
                 >
                 |
-                <span class="farenheit">
-                  <a href="#" id="farenheit-temp">°F</a></span
+                <span class="fahrenheit">
+                  <a href="#" id="fahrenheit-temp">°F</a></span
                 >
               </div>
               <div class="conditions">
                 <div>P.O.P: 90%</div>
-                <div>Humidity: <span id="humidity"></span></div>
-                <div>Wind: <span id="wind"></span></div>
+                <div>Humidity: <span id="humidity"></span>%</div>
+                <div>Wind: <span id="wind"></span>km/h</div>
               </div>
             </div>
           </div>
@@ -125,6 +129,6 @@
         <span>by Jasmine Erpelo</span>
       </div>
     </div>
-    <script src="src/script.js"></script>
+    <script src="src/index.js"></script>
   </body>
 </html>
